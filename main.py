@@ -4,7 +4,7 @@ from band_name_generator import band_name_generator
 from tip_calculator import tip_calculator
 days = [
     {"Day" : "Day 1", "project" : "Band Name Generator", "function" : band_name_generator},
-    {"Day" : "Day 2", "project" : "Tip Calculator", "function" : tip_calculator}
+    {"Day" : "Day 2", "project" : "Tip Calculator", "function" : tip_calculator},
 ]
 
 def menu():
@@ -17,7 +17,7 @@ while True:
     choice = 20
     while choice < 1 or choice > 15:
         try:
-            choice = int(input("Enter the day number for the project you would like to see. \n"))
+            choice = int(input("Enter the day number for the project you would like to run or '0' to exit. \n"))
         except ValueError:
             choice = 20
             continue
@@ -25,3 +25,6 @@ while True:
         break
     else:
         days[choice-1]["function"]()
+        return_to_menu = input("Return to the menu? Type 'y' or 'n'")
+        if return_to_menu != "y":
+            break
