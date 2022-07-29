@@ -1,11 +1,15 @@
 # Menu program for days 1 to 15 of 100 Days of Code
 from functions import clear
-from band_name_generator import band_name_generator
-from tip_calculator import tip_calculator
+import band_name_generator
+import tip_calculator
+
+
+
 days = [
     {"Day" : "Day 1", "project" : "Band Name Generator", "function" : band_name_generator},
     {"Day" : "Day 2", "project" : "Tip Calculator", "function" : tip_calculator},
 ]
+
 
 def menu():
     clear()
@@ -24,7 +28,7 @@ while True:
     if choice == 0:
         break
     else:
-        days[choice-1]["function"]()
+        days[choice-1]["function"].play()
         return_to_menu = input("Return to the menu? Type 'y' or 'n'")
         if return_to_menu != "y":
             break

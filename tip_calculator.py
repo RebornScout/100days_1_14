@@ -1,6 +1,6 @@
 # Day 2 - tip calculator
 
-def tip_calculator():
+def play():
     print("Welcome to the tip calculator.")
     bill = input("What was the total bill? ")
     tip = input("What percentage tip would you like to give? 10, 12, or 15? ")

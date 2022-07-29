@@ -1,5 +1,5 @@
 # Day 1 - band name generator
-def band_name_generator():
+def play():
     #1. Create a greeting for your program.
     print("Welcome to Band Name Generator!")
     #2. Ask the user for the city that they grew up in.
