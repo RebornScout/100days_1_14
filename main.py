@@ -4,12 +4,14 @@ import band_name_generator
 import tip_calculator
 import treasure_island
 import rock_paper_scissors
+import password_generator
 
 days = [
     {"Day" : "Day 1", "project" : "Band Name Generator", "function" : band_name_generator},
     {"Day" : "Day 2", "project" : "Tip Calculator", "function" : tip_calculator},
     {"Day" : "Day 3", "project" : "Treasure Island (Incomplete)", "function" : treasure_island},
     {"Day" : "Day 4", "project" : "Rock, Paper, Scissors", "function" : rock_paper_scissors},
+    {"Day" : "Day 5", "project" : "Password Generator", "function" : password_generator},
 ]
 
 
@@ -21,7 +23,7 @@ def menu():
 while True:
     menu()
     choice = 20
-    while choice < 1 or choice > 15:
+    while choice < 0 or choice > 15:
         try:
             choice = int(input("Enter the day number for the project you would like to run or '0' to exit. \n"))
         except ValueError:
