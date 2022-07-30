@@ -7,6 +7,8 @@ import rock_paper_scissors
 import password_generator
 import hangman
 import caesar_cipher
+import blind_auction
+
 
 days = [
     {"Day": "Day 1", "project": "Band Name Generator", "function": band_name_generator},
@@ -17,6 +19,7 @@ days = [
     {"Day": "Day 6", "project": "No final project"},
     {"Day": "Day 7", "project": "Hangman", "function": hangman},
     {"Day": "Day 8", "project": "Caesar Cipher", "function": caesar_cipher},
+    {"Day": "Day 9", "project": "Blind Auction", "function": blind_auction},
 ]
 
 

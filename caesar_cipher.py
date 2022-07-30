@@ -3,7 +3,6 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 from ascii_art import caesar_logo
 
 
-print(caesar_logo)
 def caesar(text, shift, direction):
     result = ""
     if direction == "decode":
@@ -22,6 +21,7 @@ def caesar(text, shift, direction):
 
 
 def play():
+    print(caesar_logo)
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
