@@ -3,12 +3,13 @@ from functions import clear
 import band_name_generator
 import tip_calculator
 import treasure_island
-
+import rock_paper_scissors
 
 days = [
     {"Day" : "Day 1", "project" : "Band Name Generator", "function" : band_name_generator},
     {"Day" : "Day 2", "project" : "Tip Calculator", "function" : tip_calculator},
     {"Day" : "Day 3", "project" : "Treasure Island (Incomplete)", "function" : treasure_island},
+    {"Day" : "Day 4", "project" : "Rock, Paper, Scissors", "function" : rock_paper_scissors},
 ]
 
 
