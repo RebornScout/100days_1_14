@@ -8,7 +8,7 @@ import password_generator
 import hangman
 import caesar_cipher
 import blind_auction
-
+import calculator
 
 days = [
     {"Day": "Day 1", "project": "Band Name Generator", "function": band_name_generator},
@@ -20,6 +20,7 @@ days = [
     {"Day": "Day 7", "project": "Hangman", "function": hangman},
     {"Day": "Day 8", "project": "Caesar Cipher", "function": caesar_cipher},
     {"Day": "Day 9", "project": "Blind Auction", "function": blind_auction},
+    {"Day": "Day 10", "project": "Calculator", "function": calculator},
 ]
 
 
